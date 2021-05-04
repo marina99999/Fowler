@@ -42,9 +42,10 @@ public class Customer {
 			// result += "\t" + each.getMovie().getTitle()+ "\t" + "\t" +
 			// each.getDaysRented() + "\t" + String.valueOf(thisAmount) + "\n";
 
-			 result.append("\t").append(each.getMovie().getTitle()).append("\t").append("\t").append(each.getDaysRented()).append("\t").append(each.getCharge()).append("\n");
-	            totalAmount += each.getCharge();
-	            }
+			result.append("\t").append(each.getMovie().getTitle()).append("\t").append("\t")
+					.append(each.getDaysRented()).append("\t").append(each.getCharge()).append("\n");
+			totalAmount += each.getCharge();
+		}
 		// add footer lines
 		// result += "Amount owed is " + String.valueOf(totalAmount) + "\n";
 		// result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent
