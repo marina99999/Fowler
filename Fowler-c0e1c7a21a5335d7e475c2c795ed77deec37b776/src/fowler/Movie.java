@@ -8,9 +8,9 @@ public class Movie {
 	private final String title;
 	private int priceCode;
 
-	public Movie(String newtitle, int newpriceCode) {
-		title = newtitle;
-		priceCode = newpriceCode;
+	public Movie(String title, int priceCode) {
+		this.title = title;
+		this.priceCode = priceCode;
 	}
 
 	public int getPriceCode() {
@@ -18,12 +18,13 @@ public class Movie {
 	}
 
 	public void setPriceCode(int arg) {
-		priceCode = arg;
+		this.priceCode = arg;
 	}
 
 	public String getTitle() {
 		return title;
-	}
+	}	
+
 
 	public double getCharge(int days) {
 		double result = 0;

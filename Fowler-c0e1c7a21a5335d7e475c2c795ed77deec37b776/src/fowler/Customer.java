@@ -7,8 +7,8 @@ public class Customer {
 	private final String name;
 	private Vector<Rental> rentals = new Vector<>();
 
-	public Customer(String newname) {
-		name = newname;
+	public Customer(String name) {
+		this.name = name;
 	}
 
 	public void addRental(Rental arg) {
@@ -83,5 +83,6 @@ public class Customer {
 		}
 		return result;
 	}
+	
 
 }
