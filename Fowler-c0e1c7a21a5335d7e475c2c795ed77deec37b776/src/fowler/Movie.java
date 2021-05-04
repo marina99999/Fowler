@@ -1,3 +1,4 @@
+package fowler;
 public class Movie {
     public static final int CHILDRENS = 2;
     public static final int REGULAR = 0;
@@ -16,5 +17,9 @@ public class Movie {
     }
     public String getTitle (){
         return title;
-    };
+    }
+	public Object getFrequentRenterPoints(int i) {
+		// TODO Auto-generated method stub
+		return null;
+	};
 }

@@ -1,4 +1,5 @@
-class Rental {
+package fowler;
+public class Rental {
     private Movie movie;
     private int daysRented;
     public Rental(Movie newmovie, int newdaysRented) {
@@ -11,4 +12,8 @@ class Rental {
     public Movie getMovie() {
         return movie;
     }
+	public Object getFrequentRenterPoints() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
