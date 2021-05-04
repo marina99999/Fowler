@@ -17,14 +17,9 @@ public class Movie {
 		return priceCode;
 	}
 
-	public void setPriceCode(int arg) {
-		this.priceCode = arg;
-	}
-
 	public String getTitle() {
 		return title;
-	}	
-
+	}
 
 	public double getCharge(int days) {
 		double result = 0;
@@ -34,25 +29,25 @@ public class Movie {
 			if (days > 2)
 				result += (days - 2) * 1.5;
 			break;
-		
-		case Movie.NEW_RELEASE : 
+
+		case Movie.NEW_RELEASE:
 			result += days * 3;
 			break;
-		case Movie.CHILDRENS :
+		case Movie.CHILDRENS:
 			result += 1.5;
 			if (days > 3)
 				result += (days - 3) * 1.5;
 			break;
 		default:
-		    System.out.println("Sorry");
+			System.out.println("Sorry");
 		}
 		return result;
 	}
 
 	public Object getFrequentRenterPoints(int days) {
 		if (this.priceCode == Movie.NEW_RELEASE && days > 1)
-            return 2;
-        else
-            return 1;
-    }
+			return 2;
+		else
+			return 1;
+	}
 }
