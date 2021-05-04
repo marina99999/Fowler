@@ -20,7 +20,7 @@ public class Customer {
 	}
 
 	public String statement() {
-		//double totalAmount = 0;
+
 		int frequentRenterPoints = 0;
 		Enumeration<Rental> enum_rentals = rentals.elements();
 		// String result = "Rental Record for " + this.getName() + "\n";
@@ -50,9 +50,9 @@ public class Customer {
 		// result += "You earned " + String.valueOf(frequentRenterPoints) + " frequent
 		// renter points";
 		// return result;
+
 		result.append("Amount owed is ").append(getTotalCharge()).append("\n");
 		result.append("You earned ").append(frequentRenterPoints).append(" frequent renter points");
-		result.append("You earned ").append(getTotalFrequentRenterPoints()).append(" frequent renter points");
 		return result.toString();
 	}
 
@@ -83,6 +83,5 @@ public class Customer {
 		}
 		return result;
 	}
-	
 
 }
