@@ -5,20 +5,20 @@ public class Movie {
 	public static final int REGULAR = 0;
 	public static final int NEW_RELEASE = 1;
 
-	private final String title;
-	private final int priceCode;
+	private final String _title;
+	private final int _priceCode;
 
 	public Movie(String title, int priceCode) {
-		this.title = title;
-		this.priceCode = priceCode;
+		this._title = title;
+		this._priceCode = priceCode;
 	}
 
 	public int getPriceCode() {
-		return priceCode;
+		return _priceCode;
 	}
 
 	public String getTitle() {
-		return title;
+		return _title;
 	}
 
 	public double getCharge(int days) {
@@ -45,7 +45,7 @@ public class Movie {
 	}
 
 	public Object getFrequentRenterPoints(int days) {
-		if (this.priceCode == Movie.NEW_RELEASE && days > 1)
+		if (this._priceCode == Movie.NEW_RELEASE && days > 1)
 			return 2;
 		else
 			return 1;

@@ -1,27 +1,27 @@
 package fowler;
 
 public class Rental {
-	private final Movie movie;
-	private final int daysRented;
+	private final Movie _movie;
+	private final int _daysRented;
 
 	public Rental(Movie movie, int daysRented) {
-		this.movie = movie;
-		this.daysRented = daysRented;
+		this._movie = movie;
+		this._daysRented = daysRented;
 	}
 
 	public int getDaysRented() {
-		return daysRented;
+		return _daysRented;
 	}
 
 	public Movie getMovie() {
-		return movie;
+		return _movie;
 	}
 
 	public double getCharge() {
-		return this.movie.getCharge(this.daysRented);
+		return this._movie.getCharge(this._daysRented);
 	}
 
 	public int getFrequentRenterPoints() {
-		return (int) this.movie.getFrequentRenterPoints(this.daysRented);
+		return (int) this._movie.getFrequentRenterPoints(this._daysRented);
 	}
 }
